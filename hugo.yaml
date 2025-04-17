@@ -1,0 +1,8 @@
+baseURL: https://dariuskia.github.io
+languageCode: en-us
+title: Darius Kianersi
+theme: ["PaperMod"]
+caches:
+  images:
+    dir: :cacheDir/images
+
