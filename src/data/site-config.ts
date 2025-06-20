@@ -1,0 +1,128 @@
+export type Image = {
+    src: string;
+    alt?: string;
+    caption?: string;
+};
+
+export type Link = {
+    text: string;
+    href: string;
+};
+
+export type Hero = {
+    title?: string;
+    text?: string;
+    image?: Image;
+    actions?: Link[];
+};
+
+export type Subscribe = {
+    title?: string;
+    text?: string;
+    formUrl: string;
+};
+
+export type SiteConfig = {
+    website: string;
+    logo?: Image;
+    title: string;
+    subtitle?: string;
+    description: string;
+    image?: Image;
+    headerNavLinks?: Link[];
+    footerNavLinks?: Link[];
+    socialLinks?: Link[];
+    hero?: Hero;
+    subscribe?: Subscribe;
+    postsPerPage?: number;
+    projectsPerPage?: number;
+};
+
+const siteConfig: SiteConfig = {
+    website: 'https://dariuskia.github.io',
+    title: 'Darius Kianersi',
+    // subtitle: 'Nice to meet!',
+    description: 'Darius Kianersi\'s personal website',
+    // image: {
+    //     src: '/dante-preview.jpg',
+    //     alt: 'Dante - Astro.js and Tailwind CSS theme'
+    // },
+    headerNavLinks: [
+        {
+            text: 'Home',
+            href: '/'
+        },
+        {
+            text: 'Projects',
+            href: '/projects'
+        },
+        {
+            text: 'Resume',
+            href: '/Darius_Kianersi_Resume.pdf'
+        },
+        // {
+        //     text: 'Blog',
+        //     href: '/blog'
+        // },
+        // {
+        //     text: 'Tags',
+        //     href: '/tags'
+        // }
+    ],
+    footerNavLinks: [
+        // {
+        //     text: 'About',
+        //     href: '/about'
+        // },
+        // {
+        //     text: 'Contact',
+        //     href: '/contact'
+        // },
+        // {
+        //     text: 'Terms',
+        //     href: '/terms'
+        // },
+        {
+            text: 'Dante Theme',
+            href: 'https://github.com/JustGoodUI/dante-astro-theme'
+        }
+    ],
+    socialLinks: [
+        {
+            text: 'X',
+            href: 'https://x.com/radiuskia'
+        },
+        {
+            text: 'Linkedin',
+            href: 'https://www.linkedin.com/in/dariuskianersi/'
+        },
+        {
+            text: 'Github',
+            href: 'https://github.com/dariuskia'
+        }
+    ],
+    hero: {
+        title: 'Hi, and welcome!',
+        text: "I'm **Darius Kianersi**, a student at the University of Maryland, and previously a research engineer at <a target='_blank' href='https://cartesia.ai'>Cartesia</a>.\n\nI'm interested in building and governing AI systems that are safe, interpretable, and advancing public good. Lately, I've been exploring the intersection of technical AI research and policy—especially how we can use interpretability to improve institutional decision-making and reduce long-term risks.\n\nI currently live in San Francisco, where I enjoy strolling past <a target='_blank' href='https://en.wikipedia.org/wiki/Painted_ladies'>Victorian homes</a> I wish I lived in, frequenting <a target='_blank' href='https://maps.app.goo.gl/8Ej28j2E3n6Uf2W77'>cash-only taquerias</a> at 2 AM in the Mission, and watching dreamlike noir films at the <a target='_blank' href='https://www.roxie.com'>Roxie</a>.",
+        image: {
+            src: '/berkeley.png',
+            alt: 'With some friends at Panoramic Hill',
+            caption: 'With some friends at Panoramic Hill, Berkeley, CA!'
+        },
+        // actions: [
+        //     {
+        //         text: 'Get in Touch',
+        //         href: '/contact'
+        //     }
+        // ]
+    },
+    // subscribe: {
+    //     title: 'Subscribe to Dante Newsletter',
+    //     text: 'One update per week. All the latest posts directly in your inbox.',
+    //     formUrl: '#'
+    // },
+    postsPerPage: 8,
+    projectsPerPage: 8
+};
+
+export default siteConfig;
