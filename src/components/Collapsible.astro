@@ -1,0 +1,49 @@
+---
+// src/components/Collapsible.astro
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="collapsible-container my-16 sm:my-24">
+  <button type="button" class="collapsible-trigger flex justify-between items-center w-full text-left font-serif text-xl sm:text-2xl group focus:outline-none">
+    <span class="group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1">{title}</span>
+    <svg class="w-6 h-6 transform transition-transform duration-300 fill-current" viewBox="0 0 24 24">
+      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+    </svg>
+  </button>
+  <div class="collapsible-content overflow-hidden max-h-0 transition-all duration-700 ease-in-out">
+    <div class="prose sm:prose-lg max-w-none pt-6">
+      <slot />
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const triggers = document.querySelectorAll('.collapsible-trigger');
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const content = trigger.nextElementSibling as HTMLElement;
+        const svg = trigger.querySelector('svg');
+
+        if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+          content.style.maxHeight = '0px';
+          svg?.classList.remove('rotate-180');
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          svg?.classList.add('rotate-180');
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+</style> 

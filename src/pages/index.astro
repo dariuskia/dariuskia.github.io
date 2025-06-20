@@ -5,6 +5,7 @@ import Button from '../components/Button.astro';
 import Hero from '../components/Hero.astro';
 import PostPreview from '../components/PostPreview.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
+import Collapsible from '../components/Collapsible.astro';
 import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
 
@@ -17,6 +18,21 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
     <Hero />
+    <Collapsible title="Reflection">
+Over the past few years, three values have consistently shaped how I approach learning and work: curiosity, initiative, and purpose. These values have influenced the decisions I’ve made as a student, as a researcher, and as someone trying to find the intersection between meaningful work and long-term impact.
+<br>
+<br>
+Curiosity is where it starts. I’ve always been drawn to understanding how systems work and why things are the way they are. This interest led me to explore both technical and societal questions. In school, I studied computer science and mathematics, but outside of class I spent time reading about economic policy, AI safety, and public infrastructure. At Microsoft, I explored ways to improve how large language models answer questions. At NVIDIA, I worked on improving the performance of software tools used in machine learning. These roles gave me the space to ask questions that didn’t always have obvious answers and to follow them through with experimentation and design.
+<br>
+<br>
+Initiative has been just as important. I’ve often created opportunities for myself when none were given. I reached out to researchers whose work interested me and started projects without waiting for permission. One example was building a real-time scam detection tool after seeing how often phone fraud targeted people in my community. I taught myself the tools I needed, connected the system to phone calls, and made it fast enough to be useful. I also made the difficult choice to leave a job when I realized the work no longer aligned with my long-term goals. These experiences taught me that waiting for the perfect moment is rarely the right move. Acting on your values often means starting before you're ready.
+<br>
+<br>
+Most of all, I try to keep my work grounded in purpose. I care about how technology affects people and how we can ensure it serves the public good. This shows up in the kinds of problems I’ve chosen to work on, from interpretability in AI to thinking about how automation might change the labor economy. I’m especially interested in the role of policy and governance, and I’ve been exploring how we might build systems that are both more efficient and more fair. Whether I’m studying how AI might support better government systems or helping to design tools that are more transparent and fair, I’m motivated by the belief that technology should work in service of human needs.
+<br>
+<br>
+As I move forward, I want to keep these values at the center of what I do. I want to keep asking good questions, taking ownership of the work I care about, and staying focused on the broader impact of the problems I choose to solve.
+    </Collapsible>
     {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
