@@ -53,16 +53,12 @@ const siteConfig: SiteConfig = {
             href: '/'
         },
         {
-            text: 'Projects',
-            href: '/projects'
-        },
-        {
-            text: 'Resume',
-            href: '/Darius_Kianersi_Resume.pdf'
+            text: 'Writing',
+            href: '/writing'
         },
         // {
-        //     text: 'Blog',
-        //     href: '/blog'
+        //     text: 'Resume',
+        //     href: '/Darius_Kianersi_Resume.pdf'
         // },
         // {
         //     text: 'Tags',
@@ -82,10 +78,10 @@ const siteConfig: SiteConfig = {
         //     text: 'Terms',
         //     href: '/terms'
         // },
-        {
-            text: 'Dante Theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
-        }
+        // {
+        //     text: 'Dante Theme',
+        //     href: 'https://github.com/JustGoodUI/dante-astro-theme'
+        // }
     ],
     socialLinks: [
         {
@@ -111,7 +107,7 @@ const siteConfig: SiteConfig = {
         },
         // actions: [
         //     {
-        //         text: 'Get in Touch',
+        //         text: 'Contact',
         //         href: '/contact'
         //     }
         // ]
