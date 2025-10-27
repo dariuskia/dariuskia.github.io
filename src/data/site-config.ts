@@ -100,11 +100,11 @@ const siteConfig: SiteConfig = {
     hero: {
         title: 'Hi, and welcome!',
         text: "I'm Darius, a student at the University of Maryland, and previously a research engineer at <a target='_blank' href='https://cartesia.ai'>Cartesia</a>.\n\nI care about building AI systems that advance public good. Recently I've been exploring AI tools for democratic thought and collaboration.\n\nI currently live in San Francisco, where I enjoy strolling past <a target='_blank' href='https://en.wikipedia.org/wiki/Painted_ladies'>Victorian homes</a> I wish I lived in, frequenting late-night, cash-only <a target='_blank' href='https://maps.app.goo.gl/8Ej28j2E3n6Uf2W77'>taquerias</a> in the Mission, and watching dreamlike noir films at the <a target='_blank' href='https://www.roxie.com'>Roxie</a>.",
-        image: {
-            src: '/berkeley.png',
-            alt: 'With some friends at Panoramic Hill',
-            caption: 'With some friends at Panoramic Hill, Berkeley, CA!'
-        },
+        // image: {
+        //     src: '/berkeley.png',
+        //     alt: 'With some friends at Panoramic Hill',
+        //     caption: 'With some friends at Panoramic Hill, Berkeley, CA!'
+        // },
         // actions: [
         //     {
         //         text: 'Contact',
