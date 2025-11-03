@@ -2,14 +2,22 @@
 type Props = { date: Date };
 
 const { date } = Astro.props;
+
+// Use UTC date components to avoid timezone shifts
+// When dates are parsed from YYYY-MM-DD format, they're treated as UTC midnight
+// We want to display the date as written, not adjusted for local timezone
+const year = date.getUTCFullYear();
+const month = date.getUTCMonth();
+const day = date.getUTCDate();
+
+// Create a date string using UTC components formatted in local timezone style
+const dateString = new Date(year, month, day).toLocaleDateString('en-us', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+});
 ---
 
 <time datetime={date.toISOString()}>
-    {
-        date.toLocaleDateString('en-us', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        })
-    }
+    {dateString}
 </time>
