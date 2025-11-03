@@ -23,10 +23,8 @@ const blog = page.data;
     title="Writing"
     description="Embark on a journey of personal insights and experiences through my blog"
     image={{ src: '/dante-preview.jpg', alt: 'The preview of the site' }}
-    showHeader={false}
->
+    showHeader={false}>
     <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Writing</h1>
-    Coming soon!
     {blog.map((post) => <PostPreview post={post} class="mb-10 sm:mb-12" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
     <Subscribe class="my-16 sm:my-24" />
