@@ -30,5 +30,21 @@ const { showHeader = true, ...head } = Astro.props;
             </main>
             <Footer />
         </div>
+        <script>
+            document.addEventListener('astro:page-load', () => {
+                // Add target="_blank" and rel="noopener noreferrer" to all external links in prose
+                const prose = document.querySelector('.prose');
+                if (prose) {
+                    const links = prose.querySelectorAll('a[href]');
+                    links.forEach((link) => {
+                        const href = link.getAttribute('href');
+                        if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+                            link.setAttribute('target', '_blank');
+                            link.setAttribute('rel', 'noopener noreferrer');
+                        }
+                    });
+                }
+            });
+        </script>
     </body>
 </html>
