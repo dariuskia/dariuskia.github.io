@@ -3,7 +3,7 @@ title: From Manufacturing Consent to Manufacturing Dissent
 # excerpt: How 
 publishDate: 2025-10-30
 updatedDate: 2025-11-03  # Optional - only include if you've updated the post
-isFeatured: true  # Set to true to feature this post on the homepage
+isFeatured: false  # Set to true to feature this post on the homepage
 tags:
   - social-media
 ---
