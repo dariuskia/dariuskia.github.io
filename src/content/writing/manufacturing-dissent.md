@@ -1,5 +1,5 @@
 ---
-title: From Manufacturing Consent to Manufacturing Dissent
+title: Manufacturing Dissent
 # excerpt: How 
 publishDate: 2025-10-30
 updatedDate: 2025-11-03  # Optional - only include if you've updated the post
