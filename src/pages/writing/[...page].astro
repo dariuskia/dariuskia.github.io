@@ -16,12 +16,12 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 type Props = { page: Page<CollectionEntry<'blog'>> };
 
 const { page } = Astro.props;
-const blog = page.data;
+const blog = filterDrafts(page.data);
 ---
 
 <BaseLayout
     title="Writing"
-    description="Embark on a journey of personal insights and experiences through my blog"
+    description="Darius Kianersi's Writing"
     image={{ src: '/dante-preview.jpg', alt: 'The preview of the site' }}
     showHeader={false}>
     <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Writing</h1>
