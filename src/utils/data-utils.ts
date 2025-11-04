@@ -5,6 +5,15 @@ export function sortItemsByDateDesc(itemA: CollectionEntry<'blog' | 'projects'>,
     return new Date(itemB.data.publishDate).getTime() - new Date(itemA.data.publishDate).getTime();
 }
 
+// Filter out drafts in production, but show them in development
+export function filterDrafts(posts: CollectionEntry<'blog'>[]): CollectionEntry<'blog'>[] {
+    // In production, hide drafts. In development, show everything.
+    if (import.meta.env.PROD) {
+        return posts.filter((post) => !post.data.draft);
+    }
+    return posts;
+}
+
 export function getAllTags(posts: CollectionEntry<'blog'>[]) {
     const tags: string[] = [...new Set(posts.flatMap((post) => post.data.tags || []).filter(Boolean))];
     return tags
