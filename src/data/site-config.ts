@@ -99,7 +99,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         // title: 'Hi, and welcome!',
-        text: `Hi! I'm Darius. I'm interested in how advanced AI systems may interact with institutions, governance, and collective decision-making to advance social good. Recently I've been studying AI-delegated deliberation with the 
+        text: `Hi! I'm Darius. I'm interested in how advanced AI systems can interact with institutions, governance, and collective decision-making to advance social good. Recently I've been studying AI-delegated deliberation with the 
 <a target="_blank" href="https://cooperativeai.org">Cooperative AI Foundation</a> 
 and 
 <a target="_blank" href="https://www.pivotal-research.org">Pivotal Research</a>.
