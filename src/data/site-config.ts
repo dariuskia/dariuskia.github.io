@@ -41,7 +41,7 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     website: 'https://dariuskia.github.io',
     title: 'Darius Kianersi',
-    // subtitle: 'Nice to meet!',
+    subtitle: 'firstnamelastname@gmail.com',
     description: 'Darius Kianersi\'s personal website',
     // image: {
     //     src: '/dante-preview.jpg',
@@ -99,7 +99,23 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         // title: 'Hi, and welcome!',
-        text: "Hi! I'm Darius, and I care about building AI systems that advance public good. Recently I've been exploring AI tools for democratic thought and collaboration. Previously, I was a research engineer at <a target='_blank' href='https://cartesia.ai'>Cartesia</a>, where I trained audio models.\n\nI currently live in San Francisco, where I enjoy strolling past Victorian homes I wish I lived in, frequenting late-night, cash-only taquerias in the Mission, and watching dreamlike noir films at the Roxie.",
+        text: `Hi! I'm Darius. I'm interested in how advanced AI systems can interact with institutions, governance, and collective decision-making to advance social good. Recently I've been studying AI-delegated deliberation with the 
+<a target="_blank" href="https://cooperativeai.org">Cooperative AI Foundation</a> 
+and 
+<a target="_blank" href="https://www.pivotal-research.org">Pivotal Research</a>.
+
+I've previously researched 
+<a target="_blank" href="https://arxiv.org/abs/2603.01437">chain-of-thought interpretability</a> 
+with the 
+<a target="_blank" href="https://cbai.ai/">Cambridge AI Alignment Initiative</a> and worked as a research engineer at 
+<a target="_blank" href="https://cartesia.ai">Cartesia</a>, 
+where I trained and optimized large-scale text-to-speech models. I've also worked on large language model systems and research engineering through internships at 
+<a target="_blank" href="https://www.nvidia.com">NVIDIA</a> 
+and 
+<a target="_blank" href="https://www.microsoft.com">Microsoft</a>.
+
+Outside of research, I like thrifting clothes, reading fiction, and being a 
+<a target="_blank" href="https://en.wikipedia.org/wiki/Fl%C3%A2neur">flâneur</a>.`,
         // image: {
         //     src: '/berkeley.png',
         //     alt: 'With some friends at Panoramic Hill',
