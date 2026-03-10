@@ -7,6 +7,7 @@ draft: false
 isFeatured: false  # Set to true to feature this post on the homepage
 tags:
   - social-media
+  - democracy
 ---
 
 The post-industrial, pre-social media age was characterized by gatekeepers—media moguls, mega-corporations, and lurking politicians who held the keys to power. This structure enabled few but massive points of leverage that those powerful individuals could wield, molding the public consciousness into a form friendly to their interests. The advent of social media rattled this structure; platforms like Facebook, Twitter (now X), and the like offered a "marketplace of ideas" in the truest sense—the keys to power were accessible to anyone with a laptop and internet connection. Fast forward a few decades, and rather than widespread social and political coordination, we live in a period of unprecedented [political polarization](https://www.pewresearch.org/short-reads/2022/03/10/the-polarization-in-todays-congress-has-roots-that-go-back-decades/) and [wealth inequality](https://fred.stlouisfed.org/series/WFRBST01134). Social media was effective in inverting these structures of information: in lieu of top-down control, every fringe, grassroots ideology now has its own platform and subreddit. However, the democratization of ideas has come at a cost. Those mechanisms that encouraged self-expression and disrupted hegemony have also fragmented consensus and impaired collective action, enabling the same powerful actors of the past to preserve their grip over the status quo via disorientation and disinformation.
