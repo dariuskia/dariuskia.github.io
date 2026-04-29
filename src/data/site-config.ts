@@ -107,7 +107,7 @@ and
 I've previously researched 
 <a target="_blank" href="https://arxiv.org/abs/2603.01437">chain-of-thought interpretability</a> 
 with the 
-<a target="_blank" href="https://cbai.ai/">Cambridge AI Alignment Initiative</a> and worked as a research engineer at 
+<a target="_blank" href="https://cbai.ai/">Cambridge Boston Alignment Initiative</a> and worked as a research engineer at 
 <a target="_blank" href="https://cartesia.ai">Cartesia</a>, 
 where I trained and optimized large-scale text-to-speech models. I've also worked on large language model systems and research engineering through internships at 
 <a target="_blank" href="https://www.nvidia.com">NVIDIA</a> 
